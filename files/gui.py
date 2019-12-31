@@ -6,7 +6,7 @@ from datetime import datetime
 print('This is the GUI console, do not close unless the GUI is actually closed.\nClose the program using the GUI.')
 
 new = 1
-url = "http://heyitsrobert.rf.gd/launcher"
+url = "https://github.com/heyitsrobert/BackReminder"
 
 def logFile(content):
     log = open("guilogs.txt", "a")
@@ -35,7 +35,7 @@ window.title("BackReminder")
 icon = tkinter.PhotoImage(file = "logo.png")
 label = tkinter.Label(window, image = icon)
 label.pack()
-button_widget = tkinter.Button(window,text="Website", command=openweb)
+button_widget = tkinter.Button(window,text="Github/Updates", command=openweb)
 button_widget.pack()
 button_widget = tkinter.Button(window,text="Close", command=poweroff)
 button_widget.pack()
