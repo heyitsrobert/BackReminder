@@ -15,9 +15,9 @@ def poweroff():
     except Exception as e:
         tkinter.messagebox.showinfo("BackReminder", "Failed to close BackReminder, please close them manually.")
 
-
 window = tkinter.Tk()
 window.geometry("310x375")
+window.iconbitmap("logo.ico")
 window.resizable(0, 0)
 # to rename the title of the window
 window.title("BackReminder")
