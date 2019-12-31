@@ -1,19 +1,29 @@
 import tkinter
 import webbrowser
 import os
+from datetime import datetime
 
 print('This is the GUI console, do not close unless the GUI is actually closed.\nClose the program using the GUI.')
 
 new = 1
 url = "http://heyitsrobert.rf.gd/launcher"
 
+def logFile(content):
+    log = open("guilogs.txt", "a")
+    log.write("{}\n".format(content))
+    log.close()
 def openweb():
     webbrowser.open(url,new=new)
+    logFile("| Opened the website!")
 def poweroff():
+    logFile("| Attempt of powering BackReminder off. An error will show if failed, if not, success.")
     try:
         os.system('TASKKILL /F /IM Python.exe')
     except Exception as e:
-        tkinter.messagebox.showinfo("BackReminder", "Failed to close BackReminder, please close them manually.")
+        logFile("| Failed to close BackReminder, please close the all tabs manually.")
+        tkinter.messagebox.showinfo("BackReminder", "Failed to close BackReminder, please close all tabs manually.")
+
+logFile("\n\nBackReminder GUI has launched up!\nCurrent Time and Date: {}\n//////////////\n\n".format(datetime.now()))
 
 window = tkinter.Tk()
 window.geometry("310x375")

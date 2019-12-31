@@ -1,25 +1,25 @@
-import time
+import time 
 import random
-import ctypes  # An included library with Python install.
-from datetime import date
-
-file = open('latest.txt', 'w') # open log file
+import ctypes
+from datetime import datetime
 
 def Mbox(title, text, style):
     return ctypes.windll.user32.MessageBoxW(0, text, title, style)
 
+def logFile(content):
+    log = open("timerlogs.txt", "a")
+    log.write("{}\n".format(content))
+    log.close()
+
 def bReminder():
     time.sleep(random.randrange(1200, 1800, 3))
     print('| User has recieved the dialog box, awaiting response.')
-    file.write('BackReminders dialog box has appeared.') 
+    logFile("| User has recieved the dialog box, awaiting response.")
     Mbox('BackReminder', 'I think its time to have a stretch, can be a long one, can be a short one. A little stretch helps out a lot with your back!', 0)
-    file.write('BackReminders dialog box has been closed by the user, new timer starting.') 
     print('| User has recieved and confirmed the dialog box, a new timer may start.\n')
+    logFile("| User has recieved and confirmed the dialog box, a new timer may start.\n.")
 
- 
-file.write('Successful load..') 
-file.write('User confirmed dialong box.') 
-
+logFile("\n\nBackReminder has launched up!\nCurrent Time and Date: {}\n//////////////\n\n".format(datetime.now()))
 print('Welcome to Back Reminder.\nThe use of this is to remind you every 20-30 minutes to stretch out your back.\n\nYou may minimize this tab, as a popup will remind you!\nThis console will just be used for logging!\n\n=--- BackReminder ---=')
 
 bReminder()
@@ -106,4 +106,3 @@ bReminder()
 Mbox('BackReminder', 'You managed to stretch out 80 times, that is insane! Please restart the program to continue. Reminders have stopped until a restart of the program happens.', 0)
 print('| BackReminder has ran out, please restart the program to continue.\n')
 
-file.close() # close log file
