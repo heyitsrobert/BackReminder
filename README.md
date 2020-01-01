@@ -10,6 +10,7 @@ Alternatively, click the Releases button at the top.
 ### To-Do List
 - [x] Have an Installer, for easy installs and updates.
 - [ ] Update the GUI to have a more "modern" look.
+- [ ] Find out a way to hide console and make it more compact.
 
 ### Have a look!
 
