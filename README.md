@@ -10,3 +10,7 @@ Alternatively, click the Releases button at the top.
 ### To-Do List
 - [x] Have an Installer, for easy installs and updates.
 - [ ] Update the GUI to have a more "modern" look.
+
+### Have a look!
+
+![Example of BackReminder](https://raw.githubusercontent.com/heyitsrobert/BackReminder/master/.examples/example1.png)
