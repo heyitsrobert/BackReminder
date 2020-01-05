@@ -7,7 +7,6 @@ print('This is the GUI console, do not close unless the GUI is actually closed.\
 
 new = 1
 url = "https://github.com/heyitsrobert/BackReminder"
-
 def logFile(content):
     log = open("guilogs.txt", "a")
     log.write("{}\n".format(content))
@@ -18,7 +17,7 @@ def openweb():
 def poweroff():
     logFile("| Attempt of powering BackReminder off. An error will show if failed, if not, success.")
     try:
-        os.system('TASKKILL /F /IM Python.exe')
+        os.system('TASKKILL /F /IM pythonw.exe')
     except Exception as e:
         logFile("| Failed to close BackReminder, please close the all tabs manually.")
         tkinter.messagebox.showinfo("BackReminder", "Failed to close BackReminder, please close all tabs manually.")
@@ -35,7 +34,7 @@ window.title("BackReminder")
 icon = tkinter.PhotoImage(file = "logo.png")
 label = tkinter.Label(window, image = icon)
 label.pack()
-button_widget = tkinter.Button(window,text="Github/Updates", command=openweb)
+button_widget = tkinter.Button(window,text="Github", command=openweb)
 button_widget.pack()
 button_widget = tkinter.Button(window,text="Close", command=poweroff)
 button_widget.pack()
