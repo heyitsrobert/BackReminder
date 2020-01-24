@@ -1,9 +1,4 @@
-# BackReminder
-
-A python application that reminds you every 20-30 minutes, to stretch out to keep good posture.
-
+[![GitHub Release](https://github-basic-badges.herokuapp.com/release/heyitsrobert/backreminder.svg)]()
+[![GitHub Download Count](https://github-basic-badges.herokuapp.com/downloads/heyitsrobert/backreminder/total.svg)]()
 ### Download
 [Click here](https://github.com/heyitsrobert/BackReminder/releases/download/v1.2/BackReminder-v1.2-Installer.exe) for the latest version or [Click here](https://github.com/heyitsrobert/BackReminder/releases) to view all releases.
-
-### Examples
-on its way
