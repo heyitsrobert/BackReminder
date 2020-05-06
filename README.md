@@ -1,3 +1,7 @@
+<img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/heyitsrobert/BackReminder/total?style=for-the-badge">
+<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/heyitsrobert/BackReminder?style=for-the-badge">
+
+
 Thank you to our contributors!
 
 <a href="https://github.com/heyitsrobert/BackReminder/graphs/contributors">
