@@ -1,6 +1,3 @@
-[![GitHub Release](https://github-basic-badges.herokuapp.com/release/heyitsrobert/backreminder.svg)]()
-[![GitHub Download Count](https://github-basic-badges.herokuapp.com/downloads/heyitsrobert/backreminder/total.svg)]()
-
 Thank you to our contributors!
 
 <a href="https://github.com/heyitsrobert/BackReminder/graphs/contributors">
